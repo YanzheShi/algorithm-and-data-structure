@@ -64,12 +64,12 @@ public class QuickSort {
             list.add(random.nextInt(10));
         }
         System.out.println("排序前");
-        list.forEach(System.out::println);
+        System.out.println(list);
 
         QuickSort.sort(list, 0, list.size() - 1);
 
         System.out.println("排序后");
-        list.forEach(System.out::println);
+        System.out.println(list);
 
 
     }
