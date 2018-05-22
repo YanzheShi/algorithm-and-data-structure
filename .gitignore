@@ -1,9 +1,8 @@
-/target
+/out
 *.iml
 *.settings
 *.project
 *.idea
 *.classpath
-*/target/*
-target.
+
 
