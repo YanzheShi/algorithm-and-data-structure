@@ -1,4 +1,4 @@
-package com.github.yanzheshi.algorithm.sort;
+package com.github.yanzheshi.algorithm;
 
 /**
  * KMP算法
