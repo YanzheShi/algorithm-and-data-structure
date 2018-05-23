@@ -6,10 +6,14 @@ import java.util.Random;
 
 /**
  * 快速排序实现
- *
  * @author shiyanzhe
  */
-public class QuickSort {
+public class QuickSort implements Sort{
+    @Override
+    public void sort(List<Integer> list) {
+        sort(list, 0, list.size() - 1);
+    }
+
     public static void sort(List<Integer> list, int left, int right) {
         if (right <= left) {
             return;
@@ -58,22 +62,4 @@ public class QuickSort {
         }
     }
 
-
-    public static void main(String[] args) {
-        List<Integer> list = new LinkedList<>();
-
-        Random random = new Random();
-        for (int i = 0; i < 10; i++) {
-            list.add(random.nextInt(10));
-        }
-        System.out.println("排序前");
-        System.out.println(list);
-
-        QuickSort.sort(list, 0, list.size() - 1);
-
-        System.out.println("排序后");
-        System.out.println(list);
-
-
-    }
 }
