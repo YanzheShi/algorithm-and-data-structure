@@ -1,7 +1,6 @@
 package com.github.yanzheshi.algorithm;
 
 import com.github.yanzheshi.algorithm.sort.MergeSort;
-import com.github.yanzheshi.algorithm.sort.QuickSort;
 import com.github.yanzheshi.algorithm.sort.Sort;
 
 import java.util.LinkedList;

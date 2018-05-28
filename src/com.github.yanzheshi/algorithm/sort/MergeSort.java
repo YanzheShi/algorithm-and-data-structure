@@ -10,11 +10,15 @@ import java.util.List;
 public class MergeSort implements Sort{
 
 
+    /**
+     * 对List进行排序
+     * @param list 排序后的List
+     */
     public void sort(List<Integer> list) {
         int size = list.size();
 
         if (size != 1) {
-            //subList返回的是不可变List， 所以需要装饰为新的可变List
+            //subList返回的是不可变List， 所以需要变为新的可变List
             List<Integer> left = new ArrayList<>(list.subList(0, size / 2));
             List<Integer> right = new ArrayList<>(list.subList(size / 2, size));
             sort(left);
@@ -25,6 +29,12 @@ public class MergeSort implements Sort{
 
     }
 
+    /**
+     * 对两个有序列表进行合并
+     * @param left
+     * @param right
+     * @return 合并后的有序列表
+     */
     public static List<Integer> merge(List<Integer> left, List<Integer> right) {
         List<Integer> mergeResult = new ArrayList<>(left.size() + right.size());
 
